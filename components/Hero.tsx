@@ -63,6 +63,7 @@ const Hero: React.FC = () => {
         {/* Left Column (Stacked) - Spans 5 cols - 2 Items */}
         <div className="md:col-span-5 flex flex-col gap-4 md:gap-6 h-full min-h-[500px] md:min-h-0">
           {/* Item 1: Top Left */}
+          {/* Item 1: Top Left */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -75,6 +76,9 @@ const Hero: React.FC = () => {
             <video
               ref={videoRef1}
               src="/Vsl.mp4"
+              poster="/posters/vsl_poster.svg"
+              preload="none"
+              playsInline
               muted
               loop
               className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
@@ -97,6 +101,9 @@ const Hero: React.FC = () => {
             <video
               ref={videoRef2}
               src="/extrait.mp4"
+              poster="/posters/extrait_poster.svg"
+              preload="none"
+              playsInline
               muted
               loop
               className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
@@ -137,6 +144,9 @@ const Hero: React.FC = () => {
             <video
               ref={videoRef3}
               src="/Vsl_2.mp4"
+              poster="/posters/formation_poster.svg"
+              preload="none"
+              playsInline
               muted
               loop
               className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
@@ -161,6 +171,9 @@ const Hero: React.FC = () => {
               <video
                 ref={videoRef4}
                 src="/Se_pardonner.mp4"
+                poster="/posters/short_poster.svg"
+                preload="none"
+                playsInline
                 muted
                 loop
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
@@ -183,6 +196,9 @@ const Hero: React.FC = () => {
               <video
                 ref={videoRef5}
                 src="/Ads.mp4"
+                poster="/posters/ads_poster.svg"
+                preload="none"
+                playsInline
                 muted
                 loop
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
